@@ -1,0 +1,1 @@
+Projeto criado a partir do curso no qual utilizei a linguagem de marcação html, bem como a linguagem de estilização css; aprimorando os conhecimentos obtidos como os de semântica, flexbox, seletores, responsividade, dentre outros. Criado também um arquivo script para modificações posteriores.
