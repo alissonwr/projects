@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+header .logo{
+    font-size: 23px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+header .menu{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .menu-linha{
+    height: 3px;
+    background-color: #333;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+.container .ladoesquerdo{
+    flex: 1;
+    background-color: #3B576D;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.container .ladodireito{
+    flex: 1;
+    background-image: url("../images/WhatsApp_Image_2023-02-28_at_20.00.53-removebg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E8C63F;
+}
+
+.container .info{
+    color: #FFF;
+}
+.container .info .profissao{
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.container .info .nome{
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.container .info .botao a{
+    display: inline-block;
+    background-color: #FFF;
+    color: #3B576D;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.container .info .botao a.contrate{
+    color: #FFF;
+    background-color: #E8C63F;
+}
+
+.container .info .botao a:hover{
+    opacity: 0.8;
+}
+
+
+
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: #FFF;
+    font-size: 13px;
+    
+}
+
+footer a{
+    color: #FFF;
+}
+
+@media (max-width: 850px){
+
+    header{
+        position: initial;
+        background-color: #3B576D;
+    }
+    header .menu-linha{
+        background-color: #FFF;
+    }
+    .container{
+        flex-direction: column;
+        height: calc(100vh - 142px);
+    }
+    .container .ladoesquerdo{
+        flex: none;
+        padding: 30px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    footer{
+        position: initial;
+        font-size: 16px;
+        color: #333;
+    }
+    footer a{
+        color: #333;
+    }
+    
+}
+
+@media (max-width: 547px){
+    
+    .container .ladoesquerdo .info .nome{
+        font-size: 50px;
+    }
+
+    .container .ladoesquerdo .info .botao a{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
